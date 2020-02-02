@@ -54,9 +54,9 @@ function getData(map){
             
              //create a Leaflet GeoJSON layer and add it to the map
             L.geoJson(response, {
-                filter: function(feature){
-                   return feature.properties.Pop_2015 > 20; 
-                },
+                //filter: function(feature){
+                   //return feature.properties.Pop_2015 > 20; 
+                //},
                 onEachFeature: onEachFeature,
                 pointToLayer: function (feature, latlng){
                     return L.circleMarker(latlng, geojsonMarkerOptions);
